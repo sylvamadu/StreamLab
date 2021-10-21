@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+.app{
+    font-family: 'Open Sans', sans-serif;
+    background-size: 100%;
+    background-position: 0 60% ;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em 5em;
+    background-color: black;
+    color: white;
+    opacity: .7;
+}
+.right-section{
+    display: flex;
+}
+nav > ul{
+    display: flex;
+}
+nav > ul >li{
+    list-style: none;
+    padding: 0 2em;
+    text-transform: capitalize;
+}
+nav > ul > li > a:link{
+    text-decoration: none;
+}
+nav > ul > li > a {
+    color: white;
+}
+nav > ul > li > a:hover{
+    color: #e50916;
+}
+.right-section > .fa{
+    padding: 0 2em;
+}
+
+.fa-user{
+    color: white;
+    background-color: #e50916;
+    font-size: 14px;
+    border-radius: 50%;
+    width: 2em;
+    margin: 0 .7em;
+    
+}
+.logo-section > h2 > .fa-play{
+    color: white;
+    background-color: #e50916;
+    padding: .7em 1.2em;
+    border-radius: 50%;
+    font-size: 16px;
+}
+.logo-section > h2{
+    text-transform: uppercase;
+    font-family: 'Alatsi', sans-serif !important;
+}
+.btn-sub{
+    border: none;
+    padding: .7em 1.2em;
+    color: white;
+    background-color: #e50916;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 1em;
+}
+/*main body*/
+
+main{
+    padding-left:5em ;
+    margin-top: 3em;
+    width: 55%;
+    color: white;
+}
+main > h1{
+    font-size: 3.5em;
+    margin: .2em 0;
+    width: 80%;
+    text-transform: uppercase;
+    font-family: 'Alatsi', sans-serif!important;
+}
+.time-bloc{
+    display: flex;
+    align-items: center;
+    margin-bottom: .6em;
+}
+.imbd{
+    border:none;
+    background-color: #f5c518;
+    color: black;
+    border-radius: .3em;
+    padding: .5em;
+    font-weight: bold;
+    margin: 0 .6em;
+}
+.btn{
+    border: none;
+    padding: .4em .8em;
+    color: white;
+    background-color: #e50916;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-left: 1em;
+}
+.lead{
+    line-height: 1.5;
+    margin: 1.5em 0;
+    width: 85%;
+}
+.below-icons{
+    display: flex;
+    align-items: center;
+    margin-bottom: 3em;
+}
+.btn-btn{
+    border: none;
+    padding: .7em 1.2em;
+    color: white;
+    background-color: #e50916;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+}
+.below-icons > .fa-play{
+    background-color: white;
+    color: #e50916;
+    padding: 1.3em 2.5em;
+    border-radius: 50%;
+    font-size: 8px;
+    margin: 0 2em;
+}
+.below-icons > h4{
+    text-transform: uppercase;
+}
+.menu-bar{
+    display: none;
+}
+/*media query*/
+@media screen and (min-width:500px) and (max-width:768px){
+    .right-section{
+        display: none;
+    }
+    .menu-bar{
+        display: inline-block;
+        position: absolute;
+        top: .8em;
+        right: 1em;
+        color: white;
+        font-size: 2em;
+    }
+    main{
+        padding-left:5em ;
+        margin-top: 5em;
+        width: 80%;
+    }
+}
+@media screen and (min-width:50px) and (max-width:425px){
+    /*body{
+        font-family: 'Open Sans', sans-serif;
+        background-image: url('img/aron.jpg');
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-position: 0 40% ;
+    }*/
+    .right-section{
+        display: none;
+    }
+    .menu-bar{
+        display: inline-block;
+        position: absolute;
+        top: .4em;
+        right: .6em;
+        color: white;
+        font-size: 2em;
+    }
+    header{
+        padding: .7em 1em;
+    }
+    main{
+        padding-left:1em ;
+        margin-top: 5em;
+        width: 90%;
+    }
+    .lead{
+        width: 100%;
+    }
+}
